@@ -1,0 +1,38 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <!-- <h2 class="footer-heading">{{ site.title }}</h2> -->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+            {%- if site.email -%}
+            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {%- endif -%}
+            <li><a href="/about/">Meet the Board</a></li>
+            <li><a href="/blog/">Read the blog</a></li>
+            <li><a href="/membership/" title="Learn about membership">Become a Member</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        {%- include social.html -%}
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{- site.description | escape -}}</p>
+        <p></p>
+      </div>
+    </div>
+    <hr />
+    <div class="fine-print">
+      <p>The Harrisburg Cigar Club is a registered 501c(3) Non-profit Organization. Contributions, gifts or membership due made or paid to Harrisburg Cigar Club are not refundable or transferable and are not deductible as charitable contributions for Federal Income Tax purposes. Harrisburg Cigar Club is a non-profit organization.</p>	
+      <p><strong>UNDERAGE POLICY</strong>: Harrisburg Cigar Club (HCC) neither solicits nor accepts HCC memberships from any person under 21 years. If you are a person under 21 years, please do not apply for HCC Membership.</p>
+      <p>{{ site.title }} 2023 All Rights Reserved | Website Made by Hand in Harrisburg Pennsylvania by <a href="{{ site.webmaster-url }}" target="_blank">{{ site.webmaster }}</a></p>
+    </div>
+
+  </div>
+
+</footer>
